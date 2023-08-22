@@ -1,0 +1,155 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+header{
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 33px 9%;
+  background: transparent;
+}
+.logo{
+  font-family: 'Preahvihear', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+.navlist{
+  display: flex;
+}
+.navlist a{
+  color: black;
+  margin-left: 60px;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all .55s ease;
+}
+.navlist a:hover{
+  border-bottom: 4px solid black;
+}
+#menu-icon{
+  color: white;
+  font-size: 35px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+
+.hero{
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(245.59deg, rgb(195, 238, 195) 0%, rgb(128, 235, 128) 28%, rgb(43, 237, 43) 56%, rgb(5, 190, 5) 78%);
+  position: relative;
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+section{
+  padding: 0 19%;
+}
+.hero-text a{
+  font-family: 'Preahvihear', sans-serif;
+  font-size: 120px;
+  line-height: 1;
+  color: white;
+  margin: 0 0 45px;  
+}
+.hero-text h2{
+  font-size: 17px;
+  font-weight: 250;
+  color: black;
+  margin-bottom: 10px;
+}
+span{
+  font-size: 17px;
+  font-weight: 250;
+  color: black;
+  margin-bottom: 10px;
+}
+span b{
+  font-family: 'Preahvihear', sans-serif;
+  font-size: 20px;
+  font-weight: 250;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.objects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.objects a{
+  font-family: 'Preahvihear', sans-serif;
+  display: inline-block;
+  color: black;
+  background: rgb(195, 238, 195);
+  border: 1px solid transparent;
+  padding: 12px 30px;
+  line-height: 6.4;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 60px;
+  text-transform: uppercase;
+  transition: all .55s ease;
+}
+.objects a:hover{
+  background: transparent;
+  border: 1px solid black;
+  transform: translateY(-8px);
+}
+.objects a i{
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.icons{
+  position: absolute;
+  top: 50%;
+  padding: 0 9%;
+  transform: translateY(-50%);
+}
+.icons i{
+  display: block;
+  margin: 26px 0;
+  font-size: 24px;
+  color: white;
+  transition: all .50s ease;
+}
+.icons i:hover{
+  color: rgb(195, 238, 195);
+  transform: translateY(-5px);
+}
+.scroll-down{
+  position: absolute;
+  bottom: 6%;
+  right: 9%;
+}
+.scroll-down i{
+  display: block;
+  padding: 12px;
+  font-size: 25px;
+  color: white;
+  background: rgb(195, 238, 195);
+  border-radius: 30px;
+  transition: all .59s ease;
+}
+.scroll-down i:hover{
+  transform: translateY(-5px);
+}

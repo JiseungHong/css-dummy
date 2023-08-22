@@ -1,0 +1,276 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+.logo{
+    font-family: 'Preahvihear', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: black;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlist a:hover{
+    border-bottom: 4px solid black;
+}
+#menu-icon{
+    color: white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: 100vh;
+    background: #607d8b;
+}
+
+/*
+[A Cup of Tea.]
+
+> Description.
+*/
+.container {
+    position: relative;
+    top: 600px;
+    left: -300px;
+}
+.cup {
+    position: relative;
+    width: 280px;
+    height: 300px;
+    background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45%;
+}
+.top {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+    border-radius: 50%;
+}
+.circle {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: 50px;
+    background: linear-gradient(to left, #f9f9f9, #d9d9d9);
+    border-radius: 50%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.tea {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#c57e65, #e28462);
+    border-radius: 50%;
+}
+.handle {
+    position: absolute;
+    right: -70px;
+    top: 20px;
+    width: 160px;
+    height: 180px;
+    border: 25px solid #dcdcdc;
+    border-left: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-radius: 50%;
+    transform: rotate(42deg);
+}
+.plate {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 200px;
+    background: linear-gradient(to right, #f9f9f9, #e7e7e7);
+    border-radius: 50%;
+    box-shadow: 0 35px 35px rgba(0, 0, 0, 0.2);
+}
+.plate::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    background: linear-gradient(to left, #f9f9f9, #e7e7e7);
+}
+.plate::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    background: radial-gradient(rgba(0,0,0,0.2) 25%, transparent, transparent);
+    border-radius: 50%;
+}
+.vapour {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    padding: 0 20px;
+}
+.vapour span {
+    left: 0%;
+    position: relative;
+    bottom: 50px;
+    display: block;
+    margin: 0 2px 50px;
+    min-width: 8px;
+    height: 120px;
+    background: #fff;
+    border-radius: 50%;
+    animation: animate 5s linear infinite;
+    opacity: 0;
+    filter: blur(8px);
+    animation-delay: calc(var(--i) * -0.5s);
+}
+@keyframes animate {
+    0%
+    {
+        transform: translateY(0) scaleX(1);
+        opacity: 0;
+    }
+    15%
+    {
+        opacity: 1;
+    }
+    50%
+    {
+        transform: translateY(-150px) scaleX(5);
+    }
+    95%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateY(-300px) scaleX(10);
+    }
+}
+
+/*
+[A Text Box.]
+
+> Description.
+*/
+/*
+@import url(https://fonts.googleapis.com.com/earlyaccess/nanumgothic.css);
+.ng-font {
+    font-family:'Nanum Gothic', 돋움;
+}
+*/
+@font-face {
+    font-family: 'trana';
+    src: local('trana'),
+    url('trana.eot'),
+    url('trana.woff') format(woff),
+    url('trana.ttf') format('truetype');
+}
+.w-font {
+    position: absolute;
+    top: 270px;
+
+    font-family:'trana', sans-serif;
+    font-size: 20pt;
+    font-weight: 200;
+    letter-spacing: 0.06em;
+    text-overflow: ellipsis;
+    white-space: initial;
+}
+
+input{
+    position: absolute;
+    margin-right: 10px;
+    left: 50%;
+    margin-left: -350px;
+    top: 32%;
+    margin-top: -50px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    height: 100px;
+    width: 700px;
+
+    text-align: center;
+    font-size: 20pt;
+    font-family:'trana', sans-serif;
+    background-color: #607d8b;
+    padding: 7px;
+    color: #000;
+}
+input:hover, input:focus {
+    background-color: #6f8fa0;
+}
+button {
+    position: absolute;
+    top: 32%; /* Match the top value with the input */
+    left: calc(50% + 360px); /* Adjust this value based on your design */
+    margin-top: -50px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    height: 100px;
+    width: 70px;
+
+    text-align: center;
+    font-size: 20px;
+    background-color: #607d8b;
+    padding: 7px 15px;
+    color: #000;
+    cursor: pointer;
+}
+button:hover{
+    color: white;
+    background-color: #6f8fa0;
+}
+
+canvas{
+    position: absolute;
+    margin-right: 10px;
+    left: 55%;
+    margin-left: 10px;
+    top: calc(32%-100px);
+    margin-top: 560px;
+    height: 400px;
+    width: 600px;
+
+    background-color: #fff;
+}

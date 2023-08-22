@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Technically, this is how you use comments.
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Tea Cup | CSS Animation</title>
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="tsm_style.css">
+
+    <!--Remixicons link-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--Google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Jiseung Hong's.</a>
+
+        <ul class="navlist">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+    
+        <div class="bx bx-menu" id="menu-icon"></div>
+    
+    </header>
+
+    <div class="w-font">Talk a little bit about your day.</div>
+    <input type="number" id="userInput" placeholder="Enter a number">
+    <button onclick="performOperation()"><i class="ri-cup-line"></button>
+
+    <canvas id="myChart"></canvas>
+
+    <div class="container">
+        <div class="plate"></div>
+        <div class="cup">
+            <div class="top">
+                <div class="vapour">
+                    <span style="--i:19;"></span>
+                    <span style="--i:3;"></span>
+                    <span style="--i:5;"></span>
+                    <span style="--i:14;"></span>
+                    <span style="--i:17;"></span>
+                    <span style="--i:18;"></span>
+                    <span style="--i:12;"></span>
+                    <span style="--i:4;"></span>
+                    <span style="--i:6;"></span>
+                    <span style="--i:8;"></span>
+                    <span style="--i:10;"></span>
+                    <span style="--i:20;"></span>
+                    <span style="--i:11;"></span>
+                    <span style="--i:13;"></span>
+                    <span style="--i:7;"></span>
+                    <span style="--i:9;"></span>
+                    <span style="--i:15;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:16;"></span>
+                    <span style="--i:1;"></span>
+                </div>
+                <div class="circle">
+                    <div class="tea"></div>
+                </div>
+            </div>
+            <div class="handle"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
