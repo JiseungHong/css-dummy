@@ -45,6 +45,10 @@ header{
   cursor: pointer;
   display: none;
 }
+.icons{
+  position: absolute;
+  left: 0%;
+}
 
 .hero{
   height: 100%;
