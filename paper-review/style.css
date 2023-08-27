@@ -66,7 +66,7 @@ body {
 #image {
     max-width: 100%; /* Ensure the image doesn't exceed container width */
     max-height: 100%; /* Ensure the image doesn't exceed container height */
-    width: 300px; /* This will maintain the image's aspect ratio */
+    width: 400px; /* This will maintain the image's aspect ratio */
     height: auto; /* This will maintain the image's aspect ratio */
     position: absolute;
     top: 50%;
@@ -74,23 +74,24 @@ body {
     transform: translate(-50%, -50%);
 }
 #imageText {
+    position: absolute;
+    top: 650px;
     color: white;
-    font-size: 24px;
+    font-size: 20px;
+    font-family: 'Preahvihear', sans-serif;
+    font-weight: 400;
 }
   
 .arrow-button {
     position: absolute;
     top: 50%;
-    font-size: 24px;
     cursor: pointer;
     outline: none;
     background-color: transparent;
     border: none;
-    transform: translateY(-50%);
 }
-  
 .left {
-    left: 5%;
+    left: 10%;
     font-size: 30px;
     font-weight: 200;
 }
@@ -98,7 +99,7 @@ body {
     transform: translateX(-2px);
 }
 .right {
-    right: 5%;
+    right: 10%;
     font-size: 30px;
     font-weight: 200;
 }
