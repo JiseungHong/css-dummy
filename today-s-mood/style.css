@@ -60,8 +60,8 @@ body {
 */
 .container {
     position: relative;
-    top: 600px;
-    left: -300px;
+    top: 500px;
+    left: 0%;
 }
 .cup {
     position: relative;

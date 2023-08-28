@@ -13,7 +13,6 @@
     <link rel="stylesheet"
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="style.css">
 
     <!--Remixicons link-->
@@ -26,7 +25,7 @@
 </head>
 <body>
     <header>
-        <a href="/index.html" class="logo">Jiseung Hong's.</a>
+        <a href="/index.html" class="logo">Jiseung Hong's * Sentiment Analysis.</a>
 
         <ul class="navlist">
           <li><a href="/index.html">Home</a></li>
@@ -39,10 +38,13 @@
     </header>
 
     <div class="w-font">Talk a little bit about your day.</div>
-    <input type="number" id="userInput" placeholder="Enter a number">
-    <button onclick="performOperation()"><i class="ri-cup-line"></button>
+    <input type="text" id="userText" placeholder="Write a sentence about your day.">
+    <button onclick="analyzeSentiment()"><i class="ri-cup-line"></button>
 
-    <canvas id="myChart"></canvas>
+    <a href="chart.html">View Chart</a>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
 
     <div class="container">
         <div class="plate"></div>
@@ -78,6 +80,5 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
 </body>
 </html>
