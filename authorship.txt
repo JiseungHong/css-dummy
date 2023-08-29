@@ -5,6 +5,12 @@ Oneline Tutorials
 
 Animated Hot Cup of Tea using Html & CSS only | CSS Animation Effects
 
+2. Image
+
+Pikachu
+
+> https://www.pokemon.com/us
+
 [index.html]
 1. Youtube
 

@@ -60,8 +60,8 @@ body {
 */
 .container {
     position: relative;
-    top: 500px;
-    left: 0%;
+    top: 350px;
+    left: -30%;
 }
 .cup {
     position: relative;
@@ -208,12 +208,12 @@ body {
 }
 .w-font {
     position: absolute;
-    top: 270px;
+    top: 180px;
 
-    font-family:'trana', sans-serif;
-    font-size: 20pt;
+    font-family: 'Preahvihear', sans-serif;
+    font-size: 26pt;
     font-weight: 200;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.05em;
     text-overflow: ellipsis;
     white-space: initial;
 }
@@ -221,9 +221,9 @@ body {
 input{
     position: absolute;
     margin-right: 10px;
-    left: 50%;
+    left: 1000px;
     margin-left: -350px;
-    top: 32%;
+    top: 400px;
     margin-top: -50px;
     border: 1px solid #000;
     border-radius: 15px;
@@ -240,10 +240,14 @@ input{
 input:hover, input:focus {
     background-color: #6f8fa0;
 }
+
+
+
+/*
 button {
     position: absolute;
-    top: 32%; /* Match the top value with the input */
-    left: calc(50% + 360px); /* Adjust this value based on your design */
+    top: 32%; 
+    left: calc(50% + 360px); 
     margin-top: -50px;
     border: 1px solid #000;
     border-radius: 15px;
@@ -260,17 +264,45 @@ button {
 button:hover{
     color: white;
     background-color: #6f8fa0;
+}*/
+
+.buttonlist{
+    position: absolute;
+    font-family: 'Preahvihear', sans-serif;
+    top: 500px;
+    left: 580px;
+    display: flex;
+}
+.buttonlist button{
+    width: 200px;
+    height: 100px;
+    color: black;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #6f8fa0;
+    border: 2px solid black;
+    border-radius: 10%;
+    transition: all .55s ease;
+}
+.buttonlist button:hover{
+    background-image: url('pikachu.png');
+    background-size: cover; 
+    background-position: center; 
 }
 
-canvas{
+/* Style for canvas container */
+#chartContainer {
     position: absolute;
-    margin-right: 10px;
-    left: 55%;
-    margin-left: 10px;
-    top: calc(32%-100px);
-    margin-top: 560px;
-    height: 400px;
-    width: 600px;
+    top: 200px;
+    left: 370px;
+    text-align: center;
+}
 
-    background-color: #fff;
+/* Style for canvas */
+#myChart {
+    width: 700px;
+    height: auto;
+    border: 1px solid #ccc;
+    display: inline-block;
 }

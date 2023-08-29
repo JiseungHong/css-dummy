@@ -1,34 +1,39 @@
-const chartData = [
-    { label: 'Negative', value: 0.2 },
-    { label: 'Neutral', value: 0.6 },
-    { label: 'Positive', value: 0.8 }
-];
+function displayChart() {
+    const sentimentAnalysisResult = JSON.parse(sessionStorage.getItem('sentimentAnalysisResult'));
+    
+    if (sentimentAnalysisResult) {
+        const chartData = [
+            { label: 'Negative', value: sentimentAnalysisResult.neg },
+            { label: 'Neutral', value: sentimentAnalysisResult.neu },
+            { label: 'Positive', value: sentimentAnalysisResult.pos }
+        ];
 
-function displayChart(data) {
-    const chartContainer = document.getElementById('chartContainer');
+        const ctx = document.getElementById('myChart').getContext('2d');
 
-    // Create a chart using Chart.js
-    const chart = new Chart(chartContainer, {
-        type: 'bar',
-        data: {
-            labels: data.map(item => item.label),
-            datasets: [{
-                label: 'Sentiment Analysis',
-                data: data.map(item => item.value),
-                backgroundColor: ['red', 'grey', 'green']
-            }]
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true
+        const myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: chartData.map(item => item.label),
+                datasets: [{
+                    label: 'Sentiment Analysis',
+                    data: chartData.map(item => item.value),
+                    backgroundColor: ['red', 'grey', 'green']
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
                 }
             }
-        }
-    });
+        });
+    }
 }
 
-// Display the chart when the page loads
 window.onload = function() {
-    displayChart(chartData);
+    const chartCanvas = document.getElementById('myChart');
+    if (chartCanvas) {
+        displayChart();
+    }
 };
