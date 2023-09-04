@@ -10,6 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sentiment Analysis</title>
 
+    
+    <script src="src/index.js"></script>
+    <script src="src/vader_lexicon.js"></script>
     <script src="src/vaderSentiment.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -28,12 +31,12 @@
 </head>
 <body>
     <header>
-        <a href="/index.html" class="logo">Jiseung Hong's * Sentiment Analysis.</a>
+        <a href="/today-s-mood/today-s-mood.html" class="logo">Jiseung Hong's * Sentiment Analysis.</a>
 
         <ul class="navlist">
           <li><a href="/index.html">Home</a></li>
           <li><a href="#">About Me</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">My Curriculum Vitae (CV)</a></li>
         </ul>
     
         <div class="bx bx-menu" id="menu-icon"></div>
@@ -44,8 +47,10 @@
     <input type="text" id="userText" placeholder="Write a sentence about your day.">
 
     <ul class="buttonlist">
-        <li><button id="renderButton" onclick="analyzeSentiment()">RENDER</button></li>
         <li><a href="chart.html"><button id="viewChartButton">VIEW CHART</button></a></li>
+        <!--
+            <li><button id="renderButton" onclick="analyzeSentiment()">RENDER</button></li>
+        -->
         <li><a href="today-s-mood.html"><button id="restartButton">RESTART</button></a></li>
     </ul>
     <script src="script.js"></script>
