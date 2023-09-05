@@ -54,7 +54,7 @@ header{
   height: 100%;
   width: 100%;
   min-height: 100vh;
-  background: white
+  background: linear-gradient(245.59deg, rgb(195, 238, 195) 0%, rgb(128, 235, 128) 28%, rgb(43, 237, 43) 56%, rgb(5, 190, 5) 78%);
   position: relative;
   display: grid;
 
