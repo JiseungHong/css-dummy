@@ -1,5 +1,6 @@
 {
   "dependencies": {
     "vader-sentiment": "^1.1.3"
-  }
+  },
+  "type": "module"
 }
