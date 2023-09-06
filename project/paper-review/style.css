@@ -5,8 +5,8 @@
     font-family: 'Montserrat', sans-serif;
     list-style: none;
     text-decoration: none;
-  }
-  header{
+}
+header{
     position: fixed;
     right: 0;
     top: 0;
@@ -17,40 +17,34 @@
     justify-content: space-between;
     padding: 33px 9%;
     background-color: #a9cadb;
-  }
-  .logo{
+}
+.logo{
     /* font-family: 'Preahvihear', sans-serif; */
     font-size: 30px;
     font-weight: 500;
     color: black;
-  }
-  .navlist{
+}
+.navlist{
     display: flex;
-  }
-  .navlist a{
+}
+.navlist a{
     color: black;
     margin-left: 60px;
     font-size: 15px;
     font-weight: 500;
     border-bottom: 2px solid transparent;
     transition: all .55s ease;
-  }
-  .navlist a:hover{
+    z-index: 1000;
+}
+.navlist a:hover{
     border-bottom: 2px solid black;
-  }
-  #menu-icon{
+}
+#menu-icon{
     color: white;
     font-size: 35px;
     z-index: 10001;
     cursor: pointer;
     display: none;
-  }
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: 100vh;
-    background: white;
 }
 
 .image-overlay {
@@ -69,14 +63,20 @@ body {
     width: 400px; /* This will maintain the image's aspect ratio */
     height: auto; /* This will maintain the image's aspect ratio */
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 40%;
+
+    transition: all .50s ease;
+    border: 3px solid #a9cadb;
+}
+#image:hover{
+    transform: translateY(-5px);
 }
 #imageText {
-    position: absolute;
-    top: 650px;
-    color: white;
+    position: relative;
+    top: 300px;
+    left: 5%;
+    color: black;
     font-size: 20px;
     font-family: 'Preahvihear', sans-serif;
     font-weight: 400;
@@ -91,7 +91,7 @@ body {
     border: none;
 }
 .left {
-    left: 10%;
+    left: 20%;
     font-size: 30px;
     font-weight: 200;
 }
@@ -113,6 +113,36 @@ body {
     cursor: pointer;
     opacity: 0; /* Make the thumbnail transparent */
 }
+
+.icons{
+    position: fixed;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+    color: black;
+  }
+  .icons i{
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    color: black;
+    transition: all .50s ease;
+  }
+  .icons i:hover{
+    color: #a9cadb;
+    transform: translateY(-5px);
+  }
+#back{
+    position: absolute;
+    left: 50px;
+    top: 160px;
+    z-index: 1000;
+    
+    transition: all .50s ease;
+}
+#back:hover{
+    transform: translateY(-5px);
+}
 footer{
     position: absolute;
     right: 0;
@@ -128,15 +158,4 @@ footer{
 footer a{
     position: absolute;
     right: 100px;
-}
-
-#back{
-    position: absolute;
-    left: 50px;
-    top: 160px;
-    
-    transition: all .50s ease;
-}
-#back:hover{
-    transform: translateY(-5px);
 }
