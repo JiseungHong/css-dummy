@@ -203,6 +203,7 @@ footer a{
 .box {
   width: 200px;
   height: 200px;
+  color: black;
   background-color: #a9cadb;
   margin: 10px;
   text-align: center;
@@ -240,6 +241,7 @@ footer a{
 
 #back{
   position: absolute;
+  color: black;
   left: 50px;
   top: 160px;
   

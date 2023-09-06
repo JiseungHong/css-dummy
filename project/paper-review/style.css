@@ -134,6 +134,7 @@ header{
   }
 #back{
     position: absolute;
+    color: black;
     left: 50px;
     top: 160px;
     z-index: 1000;
