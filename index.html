@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,37 +19,80 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
-  <header>
-    <a href="/index.html" class="logo">Jiseung Hong's.</a>
+  <header class="fixed_header">
+    <a href="/index.html" class="logo"><img id="custom_icon" src="/vomo2.jpeg" alt="custom_img" style="width: 50px; height: 50px;">
+        Jiseung Hong (홍지승)
+    </a>
 
     <ul class="navlist">
       <li><a href="/index.html">Home</a></li>
-      <li><a href="#">About Me</a></li>
+      <li><a href="/project/project.html">Projects</a></li>
       <li><a href="#">My Curriculum Vitae</a></li>
     </ul>
 
     <div class="bx bx-menu" id="menu-icon"></div>
-
   </header>
 
-  <section class="hero">
-    <!--class=hero-text-->
-    <!--class=objects-->
+  <section class="sec">
+    <div class="profile">
+        <img id="pic" src="me.jpeg" style="width: 150px; height: auto;">
+        <p id="profile_content"><br><br><strong>My name is Jiseung Hong, and I was ...</strong><br><br>
+        <strong>Mar. 1999</strong> Born in Seoul, Republic of Korea.<br><br>
+        <strong>2004 ~ 2006</strong> Hardy Kindergarten, Boston, Massachussett<br><br>
+        <strong>2006 ~ 2011</strong> WonMyong Elementary School<br><br>
+        <strong>2012 ~ 2014</strong> Seoil Middle School<br><br>
+        <strong>2015 ~ 2016</strong> Sejong High School<br><br>
+        <strong>Feb. 2017 ~ Feb. 2024</strong> KAIST<br>- School of Computing Undergraduate Student<br><br>
+        <strong>Jun. 2019 ~ Dec. 2019</strong> Intership<br>- KAIST Concurruncy & Parallelism Laboratory<br><br>
+        <strong>Dec. 2019 ~ Mar. 2020</strong> Intership<br>- SK hynix<br><br>
+        <strong>Mar. 2020 ~ Feb. 2021</strong> SK hynix Scholorship for Excellence<br><br>
+        <strong>Mar. 2021 ~ Sep. 2021</strong> Intership<br>- NCSOFT<br><br>
+        <strong>Oct. 2021 ~ Aug. 2023</strong> Republic of Korea Air Force
+    </p>
+    </div>
+    
+    <div class="idea_contents">
+        <h1>어서오세요!</h1>
+        <a id="title_description">= Welcome to my place!</a>
+        
+        <a id="CV_zone">I am a undergraduate student of KAIST School of Computing,
+            who is interested<br>in Natural Language Processing and Interactive Developing.
+        </a>
+        <a id="gotoCV" href="#">
+            <i class="ri-arrow-right-fill"></i>Go to CV.
+        </a>
+
+        <a id="Project_zone">Feel free to enjoy the projects I've (we've) made.</a>
+        <a id="gotoProject" href="/project/project.html">
+            <i class="ri-arrow-right-fill"></i>Go to Projects.
+        </a>
+        <a id="gotoProjectDesc" href="/project/project_description.html">
+            <i class="ri-arrow-right-fill"></i>Go to Project Descriptions.
+        </a>
+
+        <a id="Paper_zone">Take a look at my Paper Reviews.
+        </a>
+        <a id="gotoPaper" href="https://jiseung-hong.tistory.com">
+            <i class="ri-arrow-right-fill"></i>Go to Paper Reviews.
+        </a>
+    </div>
   </section>
 
   <div class="icons">
     <a href="https://www.linkedin.com/in/jiseung-hong-2588a725a/"><i class="ri-linkedin-box-fill"></i></a>
     <a href="https://github.com/JiseungHong"><i class="ri-github-fill"></i></a>
     <a href="https://jiseung-hong.tistory.com"><i class="ri-edit-2-fill"></i></a>
+    <a href="mailto:jiseung.hong@kaist.ac.kr"><i class="ri-mail-fill"></i></a>
   </div>
 
-  <div class="scroll-down">
-    <a href="#"><i class="ri-arrow-down-s-fill"></i></a>
-  </div>
-
+  <footer class="tail">
+    <a href="/index.html" class="logo"><i class="ri-arrow-up-fill"></i>
+    </a>
+  </footer>
 </body>
 </html>
 
