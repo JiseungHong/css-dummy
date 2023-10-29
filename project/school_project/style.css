@@ -1,0 +1,129 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+header{
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 33px 9%;
+  background-color: #a9cadb;
+}
+.logo{
+  /* font-family: 'Preahvihear', sans-serif; */
+  font-size: 30px;
+  font-weight: 500;
+  color: black;
+}
+.navlist{
+  display: flex;
+}
+.navlist a{
+  color: black;
+  margin-left: 60px;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: all .55s ease;
+}
+.navlist a:hover{
+  border-bottom: 2px solid black;
+}
+#menu-icon{
+  color: white;
+  font-size: 35px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+
+section{
+  padding: 0 19%;
+}
+.hero{
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+#project1{
+    position: absolute;
+    top: 200px;
+    left: 800px;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 10px;
+    display: flex;
+
+    font-family: 'Barlow', sans-serif;
+}
+#project1_git{
+    position: relative;
+    top: -15px;
+    right: -5px;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 10px;
+    display: flex;
+}
+#project1_git:hover{
+    border-bottom: 2px solid black;
+}
+#project1_description{
+    position: relative;
+    top: 50px;
+    left: -90%;
+}
+
+.icons{
+  position: fixed;
+  top: 50%;
+  padding: 0 9%;
+  transform: translateY(-50%);
+  color: black;
+}
+.icons i{
+  display: block;
+  margin: 26px 0;
+  font-size: 24px;
+  color: black;
+  transition: all .50s ease;
+}
+.icons i:hover{
+  color: #a9cadb;
+  transform: translateY(-5px);
+}
+
+footer{
+  position: absolute;
+  right: 0;
+  top: 1200px;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 33px 9%;
+  background-color: #a9cadb;
+}
+footer a{
+  position: absolute;
+  right: 100px;
+}

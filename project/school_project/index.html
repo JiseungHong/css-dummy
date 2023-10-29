@@ -19,6 +19,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -36,15 +37,16 @@
     <div class="bx bx-menu" id="menu-icon"></div>
   </header>
 
-  <a href="./project.html" id="back"><i class="ri-arrow-left-s-line"></i>Projects</a>
-
-  <div class="horizontal-container">
-    <a href="./paper-review/paper-review.html" class="box" id="firstbox">Paper Review<br>Preview</a>
-    <a href="#" class="box" id="secondbox">Today's Mood</a>
-    <a href="https://langchainbasic-reqqxwp7jttzup49pqqpg4.streamlit.app" class="box" id="thirdbox">Langchain</a>
-    <a class="box" id="forthbox">Work-In<br>-Progress</a>
-    <a class="box" id="fifthbox">Work-In<br>-Progress</a>
-  </div>
+  <section class="hero">
+    <div id="project1">
+      <h1>Abstract Text Summarizing Model for Title Generation</h1>
+      <a href="https://github.com/JiseungHong/models" target="_blank" id="project1_git">
+        <i class="ri-github-fill"></i>
+      </a>
+      <a id="project1_description">: Our team developed a Transformer-based model for generating article titles through abstract summarization.<br>
+        The model comprises four key steps: data crawling, sentence extraction, model training, and style transfer.<br>
+        These processes allowed us to fine-tune the Transformer model effectively, leading to satisfactory results measured by the BLEU score.</a>
+    </div>
     
     <!-- Interactive Web Pages.
     <div class="objects">
@@ -65,7 +67,7 @@
   </div>
 
   <footer class="tail">
-    <a href="project.html" class="logo"><i class="ri-arrow-up-fill"></i>
+    <a href="./index.html" class="logo"><i class="ri-arrow-up-fill"></i>
     </a>
   </footer>
 </body>
